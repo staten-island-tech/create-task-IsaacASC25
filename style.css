@@ -1,0 +1,6 @@
+.stand{
+    border: solid;
+    font-size: 100px;
+    border-width: 20px;     
+    border-radius: 50% 20% / 10% 40%;
+}
