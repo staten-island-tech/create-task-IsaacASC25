@@ -1,6 +1,19 @@
-.stand{
-    border: solid;
-    font-size: 100px;
-    border-width: 20px;     
-    border-radius: 50% 20% / 10% 40%;
+.stand,.hit {
+    font-size: 50px;   
+    border-radius: 15px;
 }
+
+.stand:hover {
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white
+}
+
+.hit:hover {
+    transition-duration: 0.5s;
+    background-color: black;
+    color: white
+}
+
+
+
