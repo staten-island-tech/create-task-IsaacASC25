@@ -57,12 +57,16 @@ const deck = [
 ];
 
 let card = document.querySelectorbyId("card");
+let hit = document.querySelectorbyId("hit");
+let stand = document.querySelectorbyId("hit");
 
 function randomize(deck) {
   let random = Math.floor(Math.random() * 53);
   let bigdawg = deck[random];
   return bigdawg;
 }
-
-if (element.addEventListener("click", () => {
 card.innerhtml(randomize(deck));
+
+document.querySelectorbyId("hit").addEventListener("click", function() {
+card.innerhtml(randomize(deck));
+});
