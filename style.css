@@ -1,19 +1,25 @@
-.stand,.hit {
-    font-size: 50px;   
-    border-radius: 15px;
+
+.stand,
+.hit {
+    width: 35%;
+    margin: auto;
+    padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  border-radius: 15px;
+  gap: 0;
 }
 
 .stand:hover {
-    transition-duration: 0.5s;
-    background-color: black;
-    color: white
+  transition-duration: 0.5s;
+  background-color: pink;
+  color: purple;
+  transition: background-color 0.3s 50%;
 }
 
 .hit:hover {
-    transition-duration: 0.5s;
-    background-color: black;
-    color: white
+  transition-duration: 0.5s;
+  background-color: pink;
+  color: purple;
+  transform: 50%;
 }
-
-
-
