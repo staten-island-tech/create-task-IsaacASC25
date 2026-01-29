@@ -56,17 +56,16 @@ const deck = [
   { rank: "K", suit: "♣", value: 10 },
 ];
 
-let card = document.querySelectorbyId("card");
-let hit = document.querySelectorbyId("hit");
-let stand = document.querySelectorbyId("hit");
+let card = document.querySelector(".card");
+let hit = document.querySelector(".hit");
+let stand = document.querySelector(".stand");
 
 function randomize(deck) {
   let random = Math.floor(Math.random() * 53);
   let bigdawg = deck[random];
   return bigdawg;
 }
-card.innerhtml(randomize(deck));
 
-document.querySelectorbyId("hit").addEventListener("click", function() {
-card.innerhtml(randomize(deck));
+hit.addEventListener("click", function() {
+card.innerhtml = randomize(deck);
 });
