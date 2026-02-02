@@ -1,71 +1,18 @@
-const deck = [
-  { rank: "A", suit: "♠", value: [1, 11] },
-  { rank: "2", suit: "♠", value: 2 },
-  { rank: "3", suit: "♠", value: 3 },
-  { rank: "4", suit: "♠", value: 4 },
-  { rank: "5", suit: "♠", value: 5 },
-  { rank: "6", suit: "♠", value: 6 },
-  { rank: "7", suit: "♠", value: 7 },
-  { rank: "8", suit: "♠", value: 8 },
-  { rank: "9", suit: "♠", value: 9 },
-  { rank: "10", suit: "♠", value: 10 },
-  { rank: "J", suit: "♠", value: 10 },
-  { rank: "Q", suit: "♠", value: 10 },
-  { rank: "K", suit: "♠", value: 10 },
-
-  { rank: "A", suit: "♥", value: [1, 11] },
-  { rank: "2", suit: "♥", value: 2 },
-  { rank: "3", suit: "♥", value: 3 },
-  { rank: "4", suit: "♥", value: 4 },
-  { rank: "5", suit: "♥", value: 5 },
-  { rank: "6", suit: "♥", value: 6 },
-  { rank: "7", suit: "♥", value: 7 },
-  { rank: "8", suit: "♥", value: 8 },
-  { rank: "9", suit: "♥", value: 9 },
-  { rank: "10", suit: "♥", value: 10 },
-  { rank: "J", suit: "♥", value: 10 },
-  { rank: "Q", suit: "♥", value: 10 },
-  { rank: "K", suit: "♥", value: 10 },
-
-  { rank: "A", suit: "♦", value: [1, 11] },
-  { rank: "2", suit: "♦", value: 2 },
-  { rank: "3", suit: "♦", value: 3 },
-  { rank: "4", suit: "♦", value: 4 },
-  { rank: "5", suit: "♦", value: 5 },
-  { rank: "6", suit: "♦", value: 6 },
-  { rank: "7", suit: "♦", value: 7 },
-  { rank: "8", suit: "♦", value: 8 },
-  { rank: "9", suit: "♦", value: 9 },
-  { rank: "10", suit: "♦", value: 10 },
-  { rank: "J", suit: "♦", value: 10 },
-  { rank: "Q", suit: "♦", value: 10 },
-  { rank: "K", suit: "♦", value: 10 },
-
-  { rank: "A", suit: "♣", value: [1, 11] },
-  { rank: "2", suit: "♣", value: 2 },
-  { rank: "3", suit: "♣", value: 3 },
-  { rank: "4", suit: "♣", value: 4 },
-  { rank: "5", suit: "♣", value: 5 },
-  { rank: "6", suit: "♣", value: 6 },
-  { rank: "7", suit: "♣", value: 7 },
-  { rank: "8", suit: "♣", value: 8 },
-  { rank: "9", suit: "♣", value: 9 },
-  { rank: "10", suit: "♣", value: 10 },
-  { rank: "J", suit: "♣", value: 10 },
-  { rank: "Q", suit: "♣", value: 10 },
-  { rank: "K", suit: "♣", value: 10 },
-];
-
-let card = document.querySelector(".card");
-let hit = document.querySelector(".hit");
-let stand = document.querySelector(".stand");
+const rps = ["Rock", "Paper", "Scissors"]
+const rpsi = document.querySelector(".rpsi");
+const rock = document.querySelector(".rock");
+const paper = document.querySelector(".paper");
+const scissors = document.querySelector(".scissors");
 
 function randomize(deck) {
-  let random = Math.floor(Math.random() * 53);
+  let random = Math.floor(Math.random() * 4);
   let bigdawg = deck[random];
   return bigdawg;
 }
 
-hit.addEventListener("click", function() {
-card.innerhtml = randomize(deck);
+rock.addEventListener("click", function() {
+console.log(randomize(deck));
 });
+
+function game(rps){
+}

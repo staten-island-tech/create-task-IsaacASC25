@@ -1,25 +1,43 @@
 
-.stand,
-.hit {
-    width: 35%;
-    margin: auto;
-    padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 40px;
+.rock,
+.paper,
+.scissors {
+  font-family: 'Times New Roman', Times, serif;
+    width: 31.3%;
+    margin: 20px;
+    padding-top: 75px;
+  padding-bottom: 75px;
+  font-size: 35px;
   border-radius: 15px;
-  gap: 0;
+
 }
 
-.stand:hover {
+.paper:hover {
   transition-duration: 0.5s;
   background-color: pink;
   color: purple;
   transition: background-color 0.3s 50%;
 }
 
-.hit:hover {
+.rock:hover {
   transition-duration: 0.5s;
   background-color: pink;
   color: purple;
   transform: 50%;
+}
+
+.scissors:hover {
+  transition-duration: 0.5s;
+  background-color: pink;
+  color: purple;
+  transform: 50%;
+}
+
+.bigdawg{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #080808;
+  text-align: center;
+  margin-top: 50px;
 }
